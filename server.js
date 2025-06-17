@@ -29,7 +29,7 @@ let GameDB = Datastore.create(__dirname + '/game.db')
 
 //Endpoint to get the top 3 rankings based on timing
 server.post("/rank", (req, res) => {
-   GameDB.find({}, { _id: 0 }).sort({ "timing": -1 }).limit(3).then((docs) => {
+   GameDB.find({}, { _id: 0 }).sort({ "timing": 1 }).limit(3).then((docs) => {
       if (docs != null) {
          res.send(docs);
       }
@@ -42,7 +42,7 @@ server.post("/postscore", (req, res) => {
    //save to db(database)
    GameDB.insert(req.body).then(doc => {
       //find and sort top 3 
-      GameDB.find({}, { _id: 0 }).sort({ "timing": -1 }).limit(3).then((docs) => {
+      GameDB.find({}, { _id: 0 }).sort({ "timing": 1 }).limit(3).then((docs) => {
          if (docs != null) {
             res.send(docs);
          }
