@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BackButton__doDefault !== "undefined") {
 gdjs.evtsExt__BackButton__doDefault = {};
 
 
-gdjs.evtsExt__BackButton__doDefault.userFunc0xedfc08 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BackButton__doDefault.userFunc0xef2578 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Close the app on cordova, as this is the default behavior
 if (navigator.app) {
@@ -29,7 +29,7 @@ gdjs.evtsExt__BackButton__doDefault.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__BackButton__doDefault.userFunc0xedfc08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BackButton__doDefault.userFunc0xef2578(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

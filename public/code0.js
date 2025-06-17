@@ -4,68 +4,21 @@ gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects1_1final = [];
 
 gdjs.Main_32sceneCode.GDBGObjects1= [];
 gdjs.Main_32sceneCode.GDBGObjects2= [];
-gdjs.Main_32sceneCode.GDBGObjects3= [];
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects1= [];
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects2= [];
-gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects3= [];
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects1= [];
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects2= [];
-gdjs.Main_32sceneCode.GDGame_9595TitleObjects3= [];
 gdjs.Main_32sceneCode.GDNewSpriteObjects1= [];
 gdjs.Main_32sceneCode.GDNewSpriteObjects2= [];
-gdjs.Main_32sceneCode.GDNewSpriteObjects3= [];
 gdjs.Main_32sceneCode.GDXButtonObjects1= [];
 gdjs.Main_32sceneCode.GDXButtonObjects2= [];
-gdjs.Main_32sceneCode.GDXButtonObjects3= [];
 gdjs.Main_32sceneCode.GDInfoObjects1= [];
 gdjs.Main_32sceneCode.GDInfoObjects2= [];
-gdjs.Main_32sceneCode.GDInfoObjects3= [];
 gdjs.Main_32sceneCode.GDrankObjects1= [];
 gdjs.Main_32sceneCode.GDrankObjects2= [];
-gdjs.Main_32sceneCode.GDrankObjects3= [];
 
 
-gdjs.Main_32sceneCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("rank"), gdjs.Main_32sceneCode.GDrankObjects2);
-{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(0).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(2));
-}{for(var i = 0, len = gdjs.Main_32sceneCode.GDrankObjects2.length ;i < len;++i) {
-    gdjs.Main_32sceneCode.GDrankObjects2[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getChild(0).getChild("name").getAsString() + " " + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(0).getChild("timing").getAsString() + "\n" + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(1).getChild("name").getAsString() + " " + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(1).getChild("timing").getAsString() + "\n" + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(2).getChild("name").getAsString() + " " + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(2).getChild("timing").getAsString() + "\n" + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(3).getChild("name").getAsString() + " " + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(3).getChild("timing").getAsString() + "\n" + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(4).getChild("name").getAsString() + " " + runtimeScene.getGame().getVariables().getFromIndex(2).getChild(4).getChild("timing").getAsString() + "\n");
-}
-}}
-
-}
-
-
-};gdjs.Main_32sceneCode.asyncCallback15029964 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Main_32sceneCode.localVariables);
-
-{ //Subevents
-gdjs.Main_32sceneCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.Main_32sceneCode.localVariables.length = 0;
-}
-gdjs.Main_32sceneCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Main_32sceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("http://127.0.0.1/rank", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().get("log")), (runtimeScene) => (gdjs.Main_32sceneCode.asyncCallback15029964(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.Main_32sceneCode.eventsList2 = function(runtimeScene) {
+gdjs.Main_32sceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -77,14 +30,6 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableA
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Main_32sceneCode.eventsList1(runtimeScene);} //End of subevents
-}
 
 }
 
@@ -193,48 +138,34 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.Main_32sceneCode.GDBGObjects1.length = 0;
 gdjs.Main_32sceneCode.GDBGObjects2.length = 0;
-gdjs.Main_32sceneCode.GDBGObjects3.length = 0;
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects1.length = 0;
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects2.length = 0;
-gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects3.length = 0;
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects1.length = 0;
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects2.length = 0;
-gdjs.Main_32sceneCode.GDGame_9595TitleObjects3.length = 0;
 gdjs.Main_32sceneCode.GDNewSpriteObjects1.length = 0;
 gdjs.Main_32sceneCode.GDNewSpriteObjects2.length = 0;
-gdjs.Main_32sceneCode.GDNewSpriteObjects3.length = 0;
 gdjs.Main_32sceneCode.GDXButtonObjects1.length = 0;
 gdjs.Main_32sceneCode.GDXButtonObjects2.length = 0;
-gdjs.Main_32sceneCode.GDXButtonObjects3.length = 0;
 gdjs.Main_32sceneCode.GDInfoObjects1.length = 0;
 gdjs.Main_32sceneCode.GDInfoObjects2.length = 0;
-gdjs.Main_32sceneCode.GDInfoObjects3.length = 0;
 gdjs.Main_32sceneCode.GDrankObjects1.length = 0;
 gdjs.Main_32sceneCode.GDrankObjects2.length = 0;
-gdjs.Main_32sceneCode.GDrankObjects3.length = 0;
 
-gdjs.Main_32sceneCode.eventsList2(runtimeScene);
+gdjs.Main_32sceneCode.eventsList0(runtimeScene);
 gdjs.Main_32sceneCode.GDBGObjects1.length = 0;
 gdjs.Main_32sceneCode.GDBGObjects2.length = 0;
-gdjs.Main_32sceneCode.GDBGObjects3.length = 0;
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects1.length = 0;
 gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects2.length = 0;
-gdjs.Main_32sceneCode.GDWhiteSleekButtonObjects3.length = 0;
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects1.length = 0;
 gdjs.Main_32sceneCode.GDGame_9595TitleObjects2.length = 0;
-gdjs.Main_32sceneCode.GDGame_9595TitleObjects3.length = 0;
 gdjs.Main_32sceneCode.GDNewSpriteObjects1.length = 0;
 gdjs.Main_32sceneCode.GDNewSpriteObjects2.length = 0;
-gdjs.Main_32sceneCode.GDNewSpriteObjects3.length = 0;
 gdjs.Main_32sceneCode.GDXButtonObjects1.length = 0;
 gdjs.Main_32sceneCode.GDXButtonObjects2.length = 0;
-gdjs.Main_32sceneCode.GDXButtonObjects3.length = 0;
 gdjs.Main_32sceneCode.GDInfoObjects1.length = 0;
 gdjs.Main_32sceneCode.GDInfoObjects2.length = 0;
-gdjs.Main_32sceneCode.GDInfoObjects3.length = 0;
 gdjs.Main_32sceneCode.GDrankObjects1.length = 0;
 gdjs.Main_32sceneCode.GDrankObjects2.length = 0;
-gdjs.Main_32sceneCode.GDrankObjects3.length = 0;
 
 
 return;
