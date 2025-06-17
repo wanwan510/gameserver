@@ -56,3 +56,7 @@ server.post("/postscore", (req, res) => {
 server.listen(80, () => {
    console.log("Server is running on port 80");
 });
+
+//step1>node server.js
+//step2>http://localhost:80/
+//
